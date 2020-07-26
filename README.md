@@ -34,7 +34,7 @@ Open the `_Host.cshtml` file (server-side Blazor) or `wwwroot/index.html` (clien
 
 ### Include Radzen.Blazor.js
 
-Open the `_Host.cshtml` file (server-side Blazor) or `wwwroot/index.html` (client-side Blazor) and include this snippet `<script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>`
+Open the `_Host.cshtml` file (server-side Blazor) or `wwwroot/index.html` (client-side Blazor) and include this snippet `<script src="_content/Radzen.Blazor/Radzen.Blazor.js" async></script>`. It is important to include the `async` attribute; without it, some flickering may occur while running with server side rendering (`render-mode="ServerPrerendered"` in `_Host.cshtml`).
 
 ### Use a component
 Use any Radzen Blazor component by typing its tag name in a Blazor page e.g. 
